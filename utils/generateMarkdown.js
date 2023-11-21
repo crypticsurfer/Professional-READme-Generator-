@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-    if (liscense !== "No Liscense") {
+    if (license !== "No License") {
         return `![Github Liscense](https://img.shields.io/badge/license-${license}-green.svg)`
     }
     return ""
@@ -38,7 +38,7 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.project_title}
   ${renderLicenseBadge(data.license)}
   ## Description
 ${data.description}
@@ -50,19 +50,19 @@ ${data.description}
   - [Tests](#tests)
   - [Questions?](#questions)
   ## Installation
-${data.install}
+${data.installation}
   ## Usage
 ${data.usage}
   ## License
   ${renderLicenseLink(data.license)}
   ${renderLicenseSection(data.license)}
   ## Contributing
-  ${data.contributing}
+  ${data.contribution}
   [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./assets/code_of_conduct.md)
   ## Tests
-${data.tests}
+${data.testing}
   ## Questions?
-  Send me an email here ${data.email} or, click this link to access my GitHub profile https://github.com/${data.github}
+  Send me an email here ${data.email} or, click this link to access my GitHub profile https://github.com/${data.github_username}
 `;
 }
 

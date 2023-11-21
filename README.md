@@ -14,6 +14,7 @@ Clone the repo to your machine and run "npm install" in a bash terminal to creat
   ## Usage
 To use this application run "node index.js" from a bash terminal and fill out the prompts to create the README.md file.
 ![image](https://github.com/crypticsurfer/Professional-READme-Generator-/assets/130003418/1fab5fb7-fde4-4cb5-972c-a13c86bdf139)
+A video of the usage can be viewed [here](https://watch.screencastify.com/v/6dqACANg1it2rEf3rJxl)
 
   ## License
   * [License](https://opensource.org/license/mit/)

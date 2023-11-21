@@ -21,7 +21,7 @@ A video of the usage can be viewed [here](https://watch.screencastify.com/v/6dqA
   This app was licensed under MIT license
   ## Contributing
    [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./assets/code_of_conduct.md)
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./assets/code_of_conduct.md)
+  I had help from Tim with the licensing code!
   ## Tests
 
   ## Questions?

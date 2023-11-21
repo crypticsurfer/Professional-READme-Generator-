@@ -1,14 +1,11 @@
 // TODO: Include packages needed for this application
+var inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require("fs");
+const path = reqiore("path");
 
 // TODO: Create an array of questions for user input
-const questions = [];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {
-    const questions = [
+const questions = [
         {
           type: 'input',
           name: 'project_title',
@@ -43,12 +40,12 @@ function init() {
             type: 'list',
             name: 'license',
             message: "What license are you using for this project?",
+            choices: ["Type A", "Type B", "Type C"],
         },
         {
             type: 'input',
             name: 'github username',
             message: "What is your github username?",
-            choices: ["Type A", "Type B", "Type C"],
         },
         {
             type: 'input',
@@ -56,9 +53,22 @@ function init() {
             message: "What is your email address?",
         },
     ];
-    var inquirer = require('inquirer');
+
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    const filePath = path.join(fileName)
+    fs.writeFile(filePath, generateMarkdowndata, (err) =>
+    err ? console.error(err) : console.log(`ReadMe generated! @:${filePath}`)
+    );
+}
+
+// TODO: Create a function to initialize app
+function init() {
     inquirer.prompt(questions).then((answers) => {
-        console.log(JSON.stringify(answers, null, '  '));
+        const data = JSON.stringify(answers, null, '  ');
+        console.log(data);
+        writeToFile(data);
     })
     .catch((error) => {
         if (error.isTtyError) {

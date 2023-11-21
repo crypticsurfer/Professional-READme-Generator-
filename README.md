@@ -13,6 +13,8 @@ to create a way to quickly and easily create README.md files for my projects
 Clone the repo to your machine and run "npm install" in a bash terminal to create the node module folder.
   ## Usage
 To use this application run "node index.js" from a bash terminal and fill out the prompts to create the README.md file.
+![image](https://github.com/crypticsurfer/Professional-READme-Generator-/assets/130003418/1fab5fb7-fde4-4cb5-972c-a13c86bdf139)
+
   ## License
   * [License](https://opensource.org/license/mit/)
   This app was licensed under MIT license
